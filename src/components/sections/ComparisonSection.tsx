@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const ComparisonSection = () => {
   return (
-    <section className="px-4 py-16 sm:py-24 bg-secondary/20">
+    <section className="px-4 py-12 sm:py-16 bg-secondary/20">
       <div className="container mx-auto max-w-5xl">
         <div className="mb-12 text-center animate-fade-in">
           <h2 className="mb-4 text-3xl font-bold sm:text-4xl">

@@ -24,7 +24,7 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="px-4 py-16 sm:py-24">
+    <section className="px-4 py-12 sm:py-16">
       <div className="container mx-auto max-w-6xl">
         <div className="mb-12 text-center animate-fade-in">
           <h2 className="mb-4 text-3xl font-bold sm:text-4xl">Depoimentos</h2>

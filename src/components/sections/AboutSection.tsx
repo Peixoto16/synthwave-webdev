@@ -2,17 +2,14 @@ import { Code2, User } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section className="px-4 py-16 sm:py-24">
+    <section className="px-4 py-12 sm:py-16">
       <div className="container mx-auto max-w-5xl">
         <div className="rounded-2xl border border-border bg-card p-8 shadow-card sm:p-12 animate-fade-in">
           <div className="grid gap-8 md:grid-cols-[1fr,2fr] md:gap-12 items-center">
             {/* Photo placeholder */}
             <div className="mx-auto w-full max-w-[280px]">
-              <div className="aspect-square rounded-2xl border-2 border-primary/20 bg-secondary/50 flex items-center justify-center overflow-hidden hover-scale transition-all duration-300">
+              <div className="aspect-square rounded-2xl border-2 border-primary/20 bg-secondary/50 flex items-center justify-center overflow-hidden transition-all duration-300 hover:border-primary/40 hover:shadow-glow">
                 <User className="h-24 w-24 text-primary/30" />
-                <div className="absolute inset-0 flex items-center justify-center bg-black/5">
-                  <p className="text-xs text-muted-foreground text-center px-4">Insira sua foto aqui</p>
-                </div>
               </div>
             </div>
             
