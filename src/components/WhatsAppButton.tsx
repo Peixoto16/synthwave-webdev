@@ -22,7 +22,7 @@ const WhatsAppButton = ({
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 animate-pulse-glow"
       >
-        <Button variant="whatsapp" size="lg" className="rounded-full shadow-2xl">
+        <Button variant="whatsapp" size="lg" className="rounded-[2rem] shadow-2xl">
           <MessageCircle className="h-6 w-6" />
           <span className="hidden sm:inline">WhatsApp</span>
         </Button>
