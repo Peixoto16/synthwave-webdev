@@ -3,9 +3,29 @@ import { Button } from "@/components/ui/button";
 import WhatsAppButton from "@/components/WhatsAppButton";
 
 const HeroSection = () => {
+  const features = [
+    { text: "Sites 100% profissionais", position: "top-20 left-10 sm:left-20" },
+    { text: "Agentes de IA para atendimento", position: "top-32 right-10 sm:right-20" },
+    { text: "Satisfação garantida", position: "bottom-32 left-1/2 -translate-x-1/2" }
+  ];
+
   return (
     <section className="relative overflow-hidden px-4 py-16 sm:py-24">
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iaHNsKDE5OSA4OSUgNDglIC8gMC4wNSkiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-50"></div>
+      
+      {/* Interactive Circles */}
+      {features.map((feature, index) => (
+        <div
+          key={index}
+          className={`hidden lg:flex absolute ${feature.position} w-48 h-48 rounded-full border-2 border-primary/30 items-center justify-center p-6 animate-fade-in hover:border-primary hover:scale-110 hover:shadow-glow transition-all duration-500 cursor-pointer group backdrop-blur-sm bg-background/5`}
+          style={{ animationDelay: `${index * 200}ms` }}
+        >
+          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          <p className="text-center text-sm font-semibold text-primary relative z-10 group-hover:scale-110 transition-transform duration-300">
+            {feature.text}
+          </p>
+        </div>
+      ))}
       
       <div className="container relative z-10 mx-auto max-w-6xl text-center">
         <div className="animate-fade-in">
