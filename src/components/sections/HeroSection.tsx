@@ -24,6 +24,10 @@ const HeroSection = () => {
             Sites profissionais, rápidos e 100% seus. Ideal para negócios que querem presença real e autoridade online.
           </p>
           
+          <p className="mx-auto mb-4 max-w-2xl text-base text-muted-foreground/90 animate-fade-in" style={{ animationDelay: '300ms' }}>
+            🔥 Nada de arrasta e cola. Seu site é digitado linha a linha, com o cuidado que o seu negócio merece.
+          </p>
+          
           <div className="mb-8 flex flex-col items-center justify-center gap-3 sm:flex-row animate-fade-in" style={{ animationDelay: '400ms' }}>
             <div className="flex items-center gap-2 text-primary transition-transform hover:scale-105">
               <CheckCircle2 className="h-5 w-5" />
