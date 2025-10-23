@@ -21,9 +21,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="mx-auto mb-4 max-w-2xl text-lg text-muted-foreground sm:text-xl animate-fade-in" style={{ animationDelay: '200ms' }}>
-            Desenvolvimento web profissional, sistemas personalizados e agentes de IA.
-            <br />
-            Sem arrasta e cola. Só código de qualidade.
+            Sites profissionais, rápidos e 100% seus. Ideal para negócios que querem presença real e autoridade online.
           </p>
           
           <div className="mb-8 flex flex-col items-center justify-center gap-3 sm:flex-row animate-fade-in" style={{ animationDelay: '400ms' }}>
