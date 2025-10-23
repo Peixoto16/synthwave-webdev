@@ -76,14 +76,14 @@ const ComparisonSection = () => {
         
         <div className="mt-12 flex justify-center animate-fade-in" style={{ animationDelay: '200ms' }}>
           <div className="group relative max-w-3xl rounded-lg border-2 border-primary/40 p-6 transition-all duration-300 hover:border-primary hover:shadow-glow hover:scale-[1.02]">
-            <div className="absolute -top-3 left-6 bg-background px-3">
+            <div className="absolute -top-3 left-6 bg-transparent px-3">
               <span className="text-xs font-semibold text-primary">💡 A Diferença</span>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Enquanto muitos usam construtores genéricos (WordPress, Shopify ... ), você pode ter um site exclusivo, feito com código limpo e atenção aos mínimos detalhes.
             </p>
             <p className="mt-3 text-sm text-foreground font-medium">
-              Seu site pode — e deve — refletir a qualidade do seu negócio!!
+              Seu site pode e deve refletir a qualidade do seu negócio !!
             </p>
           </div>
         </div>
