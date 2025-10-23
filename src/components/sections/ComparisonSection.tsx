@@ -73,6 +73,14 @@ const ComparisonSection = () => {
             </CardContent>
           </Card>
         </div>
+        
+        <div className="mt-12 text-center animate-fade-in" style={{ animationDelay: '200ms' }}>
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+            Enquanto muitos usam construtores genéricos (WordPress, Shopify ... ), você pode ter um site exclusivo, feito com código limpo e atenção aos mínimos detalhes.
+            <br />
+            <span className="text-foreground font-medium">Seu site pode — e deve — refletir a qualidade do seu negócio.</span>
+          </p>
+        </div>
       </div>
     </section>
   );
