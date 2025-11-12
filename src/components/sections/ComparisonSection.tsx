@@ -1,5 +1,6 @@
 import { CheckCircle2, X } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const ComparisonSection = () => {
   return (
@@ -26,14 +27,14 @@ const ComparisonSection = () => {
             <CardContent>
               <ul className="space-y-3">
                 {[
-                  "Performance otimizada (< 2s de carregamento)",
-                  "SEO avançado e indexação perfeita",
-                  "Código limpo e escalável",
-                  "Customização total e ilimitada",
-                  "Segurança profissional",
-                  "Manutenção facilitada",
-                  "Totalmente responsivo",
-                  "Integração com qualquer sistema"
+                  "Carrega em menos de 2s = visitantes não desistem",
+                  "Aparece no Google sem pagar anúncios",
+                  "Nunca trava, mesmo com milhares de acessos",
+                  "Faça qualquer mudança sem limitações",
+                  "Protegido contra hackers e ataques",
+                  "Fácil de atualizar e expandir no futuro",
+                  "Perfeito em celular, tablet e computador",
+                  "Conecta com qualquer ferramenta que precisar"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <CheckCircle2 className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
@@ -55,14 +56,14 @@ const ComparisonSection = () => {
             <CardContent>
               <ul className="space-y-3">
                 {[
-                  "Lento e pesado (5s+ de carregamento)",
-                  "SEO limitado e problemas de indexação",
-                  "Código poluído e cheio de bugs",
-                  "Limitado aos templates disponíveis",
-                  "Vulnerabilidades conhecidas",
-                  "Difícil de manter e atualizar",
-                  "Responsividade limitada",
-                  "Integrações restritas"
+                  "Demora 5s+ = você perde clientes",
+                  "Não aparece no Google organicamente",
+                  "Trava e dá erro constantemente",
+                  "Preso aos templates genéricos",
+                  "Vulnerável a hackers e invasões",
+                  "Cada mudança é uma dor de cabeça",
+                  "Quebra em alguns dispositivos",
+                  "Não conecta com ferramentas profissionais"
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-2">
                     <X className="mt-0.5 h-5 w-5 flex-shrink-0 text-muted-foreground" />
@@ -74,13 +75,18 @@ const ComparisonSection = () => {
           </Card>
         </div>
         
-        <div className="mt-12 flex justify-center animate-fade-in" style={{ animationDelay: '200ms' }}>
-          <div className="group relative max-w-3xl rounded-lg border-2 border-primary/40 p-6 transition-all duration-300 hover:border-primary hover:shadow-glow hover:scale-[1.02]">
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              Enquanto muitos usam construtores genéricos (WordPress, Shopify ... ), você pode ter um site exclusivo, feito com código limpo e atenção aos mínimos detalhes.
+        {/* CTA após comparação */}
+        <div className="mt-12 text-center animate-fade-in">
+          <div className="rounded-2xl border-2 border-primary/30 bg-gradient-to-br from-primary/5 to-primary/10 p-8 sm:p-12">
+            <h3 className="mb-4 text-2xl font-bold sm:text-3xl">
+              Pronto para ter um site que <span className="text-primary">realmente converte</span>?
+            </h3>
+            <p className="mx-auto mb-6 max-w-2xl text-lg text-muted-foreground">
+              Não perca tempo com soluções amadoras. Garanta sua vaga agora e tenha um site profissional que gera resultados.
             </p>
-            <p className="mt-3 text-sm text-foreground font-medium">
-              Seu site pode e deve refletir a qualidade do seu negócio !!
+            <WhatsAppButton message="Olá! Quero um site programado profissionalmente. Pode me enviar mais informações sobre valores e prazos?" />
+            <p className="mt-4 text-sm text-muted-foreground/70">
+              Vagas limitadas • Atendimento personalizado
             </p>
           </div>
         </div>

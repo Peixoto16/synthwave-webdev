@@ -1,9 +1,11 @@
 import WhatsAppButton from "@/components/WhatsAppButton";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
+import HowItWorksSection from "@/components/sections/HowItWorksSection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import ComparisonSection from "@/components/sections/ComparisonSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
+import GuaranteeSection from "@/components/sections/GuaranteeSection";
 import FAQSection from "@/components/sections/FAQSection";
 
 const Index = () => {
@@ -14,9 +16,11 @@ const Index = () => {
 
       <HeroSection />
       <AboutSection />
+      <HowItWorksSection />
       <ProjectsSection />
       <ComparisonSection />
       <TestimonialsSection />
+      <GuaranteeSection />
       <FAQSection />
 
       {/* Footer */}

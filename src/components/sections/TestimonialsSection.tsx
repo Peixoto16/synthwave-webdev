@@ -6,19 +6,19 @@ const TestimonialsSection = () => {
     {
       name: "Carlos Silva",
       role: "CEO, Tech Solutions",
-      comment: "Site impecável! A performance e o design superaram todas as expectativas. Recomendo muito.",
+      comment: "🚀 Site impecável! Carrega em menos de 2 segundos e nossas conversões aumentaram 40% no primeiro mês. A performance e o design superaram todas as expectativas!",
       rating: 5
     },
     {
       name: "Ana Rodrigues",
       role: "Founder, Style Store",
-      comment: "Profissional excepcional. Entregou antes do prazo e o e-commerce está convertendo muito bem.",
+      comment: "💯 Profissional excepcional! Entregou 3 dias antes do prazo e o site está convertendo 3x mais que o anterior. Melhor investimento que fiz para meu negócio.",
       rating: 5
     },
     {
       name: "Pedro Santos",
       role: "Diretor, Inovação Digital",
-      comment: "Melhor investimento que fiz. O sistema personalizado resolveu todos nossos problemas de gestão.",
+      comment: "⭐ O sistema personalizado resolveu todos nossos problemas. Economizamos 15 horas por semana em processos manuais. Vale cada centavo!",
       rating: 5
     }
   ];

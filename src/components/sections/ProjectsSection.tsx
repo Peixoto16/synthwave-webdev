@@ -4,22 +4,34 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "E-commerce Premium",
-      description: "Loja virtual completa com carrinho, checkout e painel administrativo",
-      features: ["Pagamento integrado", "Dashboard analítico", "SEO otimizado"],
+      title: (
+        <a
+          href="https://idealcontabilidade.site"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary underline hover:text-primary/80 transition-colors"
+        >
+          Ideal Contabilidade
+        </a>
+      ),
+      description: "Site Institucional completo para empresa de contabilidade, com design moderno e responsivo e claro sempre atento aos detalhes.",
+      features: [],
       date: "2025"
     },
     {
-      title: "Sistema de Gestão",
-      description: "Plataforma web para gestão de clientes, projetos e relatórios",
-      features: ["Autenticação segura", "Relatórios em tempo real", "API REST"],
-      date: "2024"
-    },
-    {
-      title: "Landing Page Conversiva",
-      description: "Site institucional com foco em conversão e performance",
-      features: ["Carregamento < 2s", "100% responsivo", "Formulários integrados"],
-      date: "2024"
+      title: (
+        <a
+          href="https://agentesimobiliarios.com.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary underline hover:text-primary/80 transition-colors"
+        >
+          Agente Imobiliário
+        </a>
+      ),
+      description: "Landing page para lansamentos e vendas de produtos online, tudo conforme o pedido do cliente.",
+      features: [],
+      date: "2025"
     }
   ];
 
@@ -59,9 +71,34 @@ const ProjectsSection = () => {
                           <div className="mb-2 text-sm font-medium text-primary">{project.date}</div>
                           <CardTitle className="text-xl mb-2">{project.title}</CardTitle>
                           <p className="text-muted-foreground">{project.description}</p>
-                        </div>
-                        <div className="rounded-lg bg-secondary/50 p-4">
-                          <Code2 className="h-8 w-8 text-primary/50 group-hover:text-primary transition-colors" />
+                          {index === 0 && (
+                            <div className="mt-4 rounded-xl overflow-hidden border border-primary/20">
+                              <iframe
+                                src="https://idealcontabilidade.site"
+                                title="Ideal Contabilidade Preview"
+                                className="w-full h-[300px] bg-white"
+                                loading="lazy"
+                                sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+                              />
+                              <div className="text-xs text-center text-muted-foreground py-2 bg-background border-t border-border">
+                                Prévia interativa do site Ideal Contabilidade
+                              </div>
+                            </div>
+                          )}
+                          {index === 1 && (
+                            <div className="mt-4 rounded-xl overflow-hidden border border-primary/20">
+                              <iframe
+                                src="https://agentesimobiliarios.com.br"
+                                title="Ideal Contabilidade Preview"
+                                className="w-full h-[300px] bg-white"
+                                loading="lazy"
+                                sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
+                              />
+                              <div className="text-xs text-center text-muted-foreground py-2 bg-background border-t border-border">
+                                Prévia interativa do site Ideal Contabilidade
+                              </div>
+                            </div>
+                          )}
                         </div>
                       </div>
                     </CardHeader>

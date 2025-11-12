@@ -7,9 +7,9 @@ const AboutSection = () => {
         <div className="rounded-2xl border border-border bg-card p-8 shadow-card sm:p-12 animate-fade-in">
           <div className="grid gap-8 md:grid-cols-[1fr,2fr] md:gap-12 items-center">
             {/* Photo placeholder */}
-            <div className="mx-auto w-full max-w-[280px]">
+            <div className="mx-auto w-full max-w-[300px]">
               <div className="aspect-square rounded-2xl border-2 border-primary/20 bg-secondary/50 flex items-center justify-center overflow-hidden transition-all duration-300 hover:border-primary/40 hover:shadow-glow">
-                <User className="h-24 w-24 text-primary/30" />
+                <img src="../img/foto.png" alt="Israel Peixoto" className="h-full w-full object-cover" />
               </div>
             </div>
             
@@ -23,15 +23,17 @@ const AboutSection = () => {
               </div>
               
               <p className="mb-4 text-lg leading-relaxed text-muted-foreground">
-                Desenvolvedor especializado em criar sites e sistemas que realmente funcionam. 
-                Com anos de experiência em programação profissional, entrego soluções sob medida 
-                que combinam design moderno, performance otimizada e código limpo.
+                Sou <span className="font-semibold text-foreground">Israel Peixoto</span>, desenvolvedor especializado em criar sites que <span className="font-semibold text-primary">convertem visitantes em clientes</span>.
+                Formando em Ciência da Computação, já ajudei dezenas de empresas e profissionais a terem uma presença digital que gera autoridade e vendas.
+              </p>
+              
+              <p className="mb-4 text-lg leading-relaxed text-muted-foreground">
+                <span className="font-semibold text-foreground">⚡ Meu diferencial?</span> Cada projeto é feito do zero, linha por linha, com foco em performance, design moderno e código limpo.
+                Nada de templates prontos ou soluções genéricas que todo mundo tem.
               </p>
               
               <p className="text-lg leading-relaxed text-muted-foreground">
-                Cada projeto é desenvolvido do zero, pensado para o seu negócio. 
-                Nada de templates prontos ou ferramentas arrasta-e-cola — apenas código 
-                profissional que escala e entrega resultados.
+                Meu objetivo é simples: <span className="font-semibold text-primary">transformar seu investimento em resultados reais</span>. Sites rápidos, seguros e otimizados para SEO e conversão.
               </p>
             </div>
           </div>
