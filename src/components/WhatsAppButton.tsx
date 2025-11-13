@@ -8,14 +8,15 @@ interface WhatsAppButtonProps {
 }
 
 const WhatsAppButton = ({
-  phone = "5511999999999",
+  phone = "5533999009090",  // Número formatado para o link do WhatsApp
   message = "Olá! Gostaria de saber mais sobre seus serviços.",
   fixed = false,
 }: WhatsAppButtonProps) => {
-  const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  const defaultMessage = "Olá! Gostaria de saber mais sobre a criação do meu site profissional. Vi seu portfólio e fiquei interessado(a) em fazer um orçamento. Pode me ajudar?\n";
+  const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message || defaultMessage)}`;
 
   const baseClasses = `
-    flex items-center gap-2
+    flex items-center justify-center gap-2
     bg-green-500 text-white
     hover:bg-green-600
     shadow-lg shadow-green-500/50
@@ -23,8 +24,12 @@ const WhatsAppButton = ({
     rounded-full
     transition-all duration-300
     hover:shadow-green-500/70
-    hover:scale-110
+    hover:scale-105
     font-semibold
+    w-full sm:w-auto
+    px-6 py-3
+    text-sm sm:text-base
+    whitespace-nowrap
   `;
 
   if (fixed) {
@@ -47,17 +52,19 @@ const WhatsAppButton = ({
   }
 
   return (
-    <a
-      href={whatsappUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-block"
-    >
-      <Button size="lg" className={baseClasses}>
-        <MessageCircle className="h-5 w-5" />
-        💬 Quero Meu Orçamento Grátis
-      </Button>
-    </a>
+    <div className="w-full flex justify-center">
+      <a
+        href={whatsappUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="w-full sm:max-w-xs"
+      >
+        <Button size="lg" className={baseClasses}>
+          <MessageCircle className="h-4 w-4 sm:h-5 sm:w-5" />
+          <span className="truncate">Quero Meu Orçamento Grátis</span>
+        </Button>
+      </a>
+    </div>
   );
 };
 

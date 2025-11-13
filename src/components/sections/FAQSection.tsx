@@ -18,7 +18,7 @@ const FAQSection = () => {
     },
     {
       question: "Qual é o investimento inicial?",
-      answer: "Projetos começam a partir de R$ 1.500 para landing pages profissionais. E-commerces e sistemas personalizados variam de acordo com as funcionalidades necessárias."
+      answer: "Projetos começam a partir de R$ 1.200 para landing pages profissionais. E-commerces e sistemas personalizados variam de acordo com as funcionalidades necessárias."
     },
     {
       question: "Vocês fazem manutenção após a entrega?",

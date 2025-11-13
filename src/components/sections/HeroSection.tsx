@@ -31,7 +31,7 @@ const HeroSection = () => {
           <div className="mb-8 flex flex-col items-center justify-center gap-3 sm:flex-row animate-fade-in" style={{ animationDelay: '400ms' }}>
             <div className="flex items-center gap-2 text-primary transition-transform hover:scale-105">
               <CheckCircle2 className="h-5 w-5" />
-              <span className="text-sm font-medium">A partir de R$ 1.500</span>
+              <span className="text-sm font-medium">Seu Começo no Digital: A partir de R$ 1.200</span>
             </div>
             <div className="hidden h-5 w-px bg-border sm:block"></div>
             <div className="flex items-center gap-2 text-muted-foreground transition-transform hover:scale-105">
@@ -40,10 +40,12 @@ const HeroSection = () => {
             </div>
           </div>
           
-          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row animate-fade-in" style={{ animationDelay: '600ms' }}>
-            <WhatsAppButton message="Olá! Vi seu site e quero garantir minha vaga para criar um site profissional. Pode me passar mais detalhes?" />
-            <Button variant="outline" size="lg" className="transition-all hover:scale-105 group border-2" asChild>
-              <a href="#projetos">
+          <div className="w-full flex flex-col items-center justify-center gap-4 sm:flex-row animate-fade-in" style={{ animationDelay: '600ms' }}>
+            <div className="w-full sm:w-auto">
+              <WhatsAppButton message="Olá! Vi seu site e quero garantir minha vaga para criar um site profissional. Pode me passar mais detalhes?" />
+            </div>
+            <Button variant="outline" size="lg" className="w-full sm:w-auto transition-all hover:scale-105 group border-2" asChild>
+              <a href="#projetos" className="flex items-center justify-center">
                 Ver Projetos
                 <ChevronDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
               </a>

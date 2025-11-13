@@ -13,7 +13,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename={process.env.NODE_ENV === 'production' ? '/synthwave-webdev' : ''}>
+      <BrowserRouter basename={process.env.NODE_ENV === 'production' ? '/looping' : ''}>
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

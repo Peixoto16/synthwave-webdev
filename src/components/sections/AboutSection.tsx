@@ -9,7 +9,7 @@ const AboutSection = () => {
             {/* Photo placeholder */}
             <div className="mx-auto w-full max-w-[300px]">
               <div className="aspect-square rounded-2xl border-2 border-primary/20 bg-secondary/50 flex items-center justify-center overflow-hidden transition-all duration-300 hover:border-primary/40 hover:shadow-glow">
-                <img src="../img/foto.png" alt="Israel Peixoto" className="h-full w-full object-cover" />
+                <img src={`${import.meta.env.BASE_URL}img/foto.png`} alt="Israel Peixoto" className="h-full w-full object-cover" />
               </div>
             </div>
             
